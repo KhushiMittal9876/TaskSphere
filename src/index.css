@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    font-family: gilroy;
+}
+
+::selection{
+    color: rgb(82, 176, 6);
+}
+
+.toastBody {
+    font-family: "Atlas Grotesk Web", Arial, Helvetica, sans-serif;
+    color: #e0e6ec; 
+    font-size: 1rem ;
+  }
