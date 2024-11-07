@@ -6,7 +6,7 @@ import Foreground from "./components/Foreground";
 
 function App() {
   return (
-    <div className="relative w-full h-screen bg-zinc-800">
+    <div className="relative w-full h-screen bg-zinc-900">
       <ToastContainer
         bodyClassName="toastBody"
         theme="dark"

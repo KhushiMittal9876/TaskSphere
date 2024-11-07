@@ -12,10 +12,10 @@ function Card({ reference , items, removeItem}) {
     <motion.div
       drag  
       dragConstraints={reference}
-      whileDrag={{ scale: 1.2 }}
+      whileDrag={{ scale: 1.3 }}
       dragElastic={0.1}
       dragTransition={{ bounceStiffness: 100, bounceDamping: 30 }}
-      className="relative flex-shrink-0  w-40 h-[170px] bg-zinc-900/90 text-white rounded-[20px] ml-9 py-7 px-6 overflow-hidden"
+      className="relative flex-shrink-0  w-40 h-[170px] bg-gray-950 text-white rounded-[20px] ml-9 py-7 px-6 overflow-hidden"
       key={id}
     >
     
