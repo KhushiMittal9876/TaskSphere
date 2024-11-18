@@ -67,10 +67,10 @@ function Foreground() {
           initial={{ y: -250 }}
           animate={{ y: 10 }}
           transition={{ delay: 0.2, duration: 1 }}
-          className="fixed top-1 left-[36%] z-[4] flex "
+          className="fixed top-2 left-[36%] z-[4] flex "
         >
           <input
-            className="w-[350px] h-[35px] rounded-[5px] mt-[5px] bg-zinc-600 pl-[25px]"
+            className="w-[400px] h-[45px] rounded-[10px] mt-[5px] bg-zinc-600 pl-[25px] text-xl"
             type="text"
             placeholder=" Type your tasks here"
             value={desc}
@@ -82,7 +82,7 @@ function Foreground() {
               boxShadow: "0px 0px 8px rgb(255,255,225)",
             }}
             type="submit"
-            className="bg-green-700 hover:bg-green-800 text-zinc-200 py-1 px-3 ml-3 rounded-[10px]"
+            className="bg-green-700 hover:bg-green-800 text-zinc-200 py-1 px-3 ml-3 rounded-[10px] text-xl"
           >
             Submit !!
           </motion.button>
@@ -95,7 +95,7 @@ function Foreground() {
             animate={{ x: 0 }}
             transition={{ delay: 0.7, duration: 2 }}
             ref={ref}
-            className="fixed top-0 left-0 z-[3] w-full h-full flex flex-wrap"
+            className="fixed top-10 left-10 z-[3] w-full h-full flex flex-wrap"
           >
             <Card reference={ref} items={list} removeItem={removeItem} />
           </motion.div>
@@ -107,7 +107,7 @@ function Foreground() {
               boxShadow: "0px 0px 8px rgb(255,255,225)",
               backgroundColor: "red",
             }}
-            className="delete fixed z-[4] top-4 right-10 bg-green-700 w-fit h-[50px] text-zinc-200 py-0.2 px-4 text-xl rounded-[10px] mb-5"
+            className="delete fixed z-[4] top-5 right-20 bg-green-700 w-fit h-[50px] text-zinc-200 py-0.2 px-4 text-xl rounded-[10px] mb-5"
             onClick={() => {
               clearAll();
               notify_empty();

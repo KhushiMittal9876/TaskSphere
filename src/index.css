@@ -3,16 +3,12 @@
 @tailwind utilities;
 
 
-*{
-    font-family: gilroy;
-}
 
 ::selection{
     color: rgb(82, 176, 6);
 }
 
 .toastBody {
-    font-family: "Atlas Grotesk Web", Arial, Helvetica, sans-serif;
+    font-family:'Open Sans';
     color: #e0e6ec; 
-    font-size: 1rem ;
   }

@@ -15,21 +15,20 @@ function Card({ reference , items, removeItem}) {
       whileDrag={{ scale: 1.3 }}
       dragElastic={0.1}
       dragTransition={{ bounceStiffness: 100, bounceDamping: 30 }}
-      className="relative flex-shrink-0  w-40 h-[170px] bg-gray-950 text-white rounded-[20px] ml-9 py-7 px-6 overflow-hidden"
+      className="relative flex-shrink-0  w-56 h-52 bg-gray-950 text-white rounded-[20px] ml-9 py-7 px-6 overflow-hidden text-xl"
       key={id}
-    >
-    
-
-        <div className="flex items-center justify-between">
+    > 
+    <button className="footer absolute bottom-0 bg-green-500 py-5 text-center w-60 h-12 left-0 flex items-center justify-center font-bold text-zinc-900/90" onClick={()=> removeItem(id)}>
+    Done
+  </button>
+        <div className="relative flex items-center justify-between">
           <GoGoal />
           <span className="mt-0 font-semibold">Task No. {task}</span>
         </div>
-        <p className="text-sm mt-4 text-transform: capitalize">
+        <p className="text-lg mt-2 text-transform: capitalize truncate">
         {title}
         </p>
-        <button className="footer absolute bottom-0 bg-green-500 py-5 w-40 h-10 left-0 flex items-center justify-center font-semibold text-zinc-900/90" onClick={()=> removeItem(id)}>
-          Done
-        </button>
+        
         
     </motion.div>
       )
