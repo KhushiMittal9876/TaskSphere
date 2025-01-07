@@ -25,11 +25,9 @@ function Card({ reference , items, removeItem}) {
           <GoGoal />
           <span className="mt-0 font-semibold">Task No. {task}</span>
         </div>
-        <p className="text-lg mt-2 text-transform: capitalize truncate">
+        <p className="text-lg mt-2 text-transform: capitalize">
         {title}
         </p>
-        
-        
     </motion.div>
       )
       })}
